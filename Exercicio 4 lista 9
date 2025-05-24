@@ -1,0 +1,25 @@
+Exercicio 4 - Lista 9    
+
+int main() {
+        setlocale(LC_ALL,"Portuguese");
+        
+        int Auxiliar,Num;
+        
+        Num = 3;
+        Auxiliar = 4;
+        
+        printf("Soma dos números entre 3 e 10 \n");
+        
+        while (Auxiliar <= 10) {
+            printf("Num: %i \n",Num);
+            printf("i: %i \n",Auxiliar);
+            Num = Num + Auxiliar;
+            Auxiliar++;
+            printf("Soma: %i \n",Num);
+            system("pause");
+            system("cls");
+        }
+        printf("Soma: %i \n",Num);
+        
+        return 0;
+    }
