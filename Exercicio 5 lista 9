@@ -1,0 +1,28 @@
+Exercicio 5 - Lista 9
+
+    int main() {
+        float Media,Nota,NotaTotal;
+        int QntProva;
+        QntProva = 0;
+        NotaTotal = 0;
+        
+        setlocale(LC_ALL,"Portuguese");
+        
+        printf("Digite as notas ou -1 para sair \n");
+        scanf("%f",&Nota);
+        while (Nota != -1) {
+            NotaTotal = NotaTotal + Nota;
+            QntProva++;
+            scanf("%f",&Nota);        
+        }
+        Media = NotaTotal/QntProva;
+        
+        printf("Nota Total: %.0f \n",NotaTotal);
+        printf("QntProva: %i \n",QntProva);
+        
+        if (QntProva == 0) {
+            printf("Nenhuma nota foi informada!");
+        } else {
+            printf("Média das notas digitadas: %.1f",Media);
+        }
+    }
