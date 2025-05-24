@@ -1,0 +1,26 @@
+// EXERCICIO 6 - LISTA 9
+    int main() {
+        setlocale(LC_ALL,"Portuguese");
+        
+        float Qnt,Preco,Calculo,Auxiliar;
+        
+        Auxiliar = 0;
+        
+        printf("Quantidade: ");
+        scanf("%f",&Qnt);
+        
+        while(Qnt > 0) {
+            
+            printf("Preço: ");
+            scanf("%f",&Preco);
+            
+            Calculo = Qnt * Preco;
+            Auxiliar = Auxiliar + Calculo;
+            
+            printf("Quantidade: ");
+            scanf("%f",&Qnt);
+        }
+    
+        printf("%.2f",Auxiliar);
+        return 0;
+    }
